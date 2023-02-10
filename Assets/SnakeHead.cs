@@ -16,6 +16,7 @@ public class SnakeHead : MonoBehaviour
     [SerializeField] private TMP_Text _score;
     [SerializeField] private int a=0;
     private LinkedList<Transform> _tailesLinked;
+    [SerializeField] private int intToSave;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class SnakeHead : MonoBehaviour
         _tailesLinked = new LinkedList<Transform>();
         _tailesLinked.AddLast(transform);
         Array.ForEach(tails, t => _tailesLinked.AddLast(t));
-        
+        intToSave = PlayerPrefs.GetInt("Saveda", 0);
     }
 
     private void OnDestroy()
@@ -39,6 +40,10 @@ public class SnakeHead : MonoBehaviour
         Rotate();
         string s1 = a.ToString();
         _score.text = s1;
+        if (a > intToSave)
+        {
+            intToSave = a;
+        }
     }
     
 
@@ -51,7 +56,13 @@ public class SnakeHead : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Finish"))
+        {
+            PlayerPrefs.SetInt("Saved", intToSave);
+            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("Saveda", a);
+            PlayerPrefs.Save();
             UnityEngine.SceneManagement.SceneManager.LoadScene("Me.u");
+        }
         if (other.gameObject.CompareTag("Respawn"))
         {
             LinkedListNode<Transform> last = _tailesLinked.Last;

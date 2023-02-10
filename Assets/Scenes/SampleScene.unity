@@ -11719,6 +11719,7 @@ MonoBehaviour:
   Right: {fileID: 607163332}
   _score: {fileID: 1820467401}
   a: 0
+  intToSave: 0
 --- !u!65 &893967068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11730,8 +11731,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0109444, y: 0.63958275, z: 1.4229078}
-  m_Center: {x: 0.005472183, y: 0.5107841, z: 0.21145391}
+  m_Size: {x: 0.78842545, y: 0.6632153, z: 0.31124783}
+  m_Center: {x: -0.0020198822, y: 0.29881757, z: 0.22039938}
 --- !u!54 &893967069
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16132,6 +16133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36cf2bd0be6280449866f4aae290460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _argon: {fileID: 0}
+  _argon1: {fileID: 0}
+  intToSave: 0
+  intToSave1: 0
 --- !u!1 &1384710239
 GameObject:
   m_ObjectHideFlags: 0
