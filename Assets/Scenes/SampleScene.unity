@@ -725,7 +725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24261141}
   m_LocalRotation: {x: -0.5005496, y: 0.49944982, z: 0.49944982, w: 0.5005496}
-  m_LocalPosition: {x: 44.2579, y: -1.52, z: 18.0121}
+  m_LocalPosition: {x: 44.2579, y: -1.61, z: 18.0121}
   m_LocalScale: {x: 2.4457364, y: 2.054853, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11791,6 +11791,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &893967070
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893967065}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 28092d8640e2f914ba95a62ffbf54ee3, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &902273565
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class Help : MonoBehaviour
@@ -13,6 +14,13 @@ public class Help : MonoBehaviour
     private bool _isFreeze;
     public static event Action<bool> PauseClicked;
 
+    [MenuItem("Tools/Clear PlayerPrefs")]
+    public static void ResetPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+    }
+    
     private void Start()
     {
         loadrecord();
