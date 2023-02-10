@@ -17,7 +17,7 @@ public class SnakeHead : MonoBehaviour
     [SerializeField] private int a=0;
     private LinkedList<Transform> _tailesLinked;
     [SerializeField] private int intToSave;
-    //hgfghjfgkdfhgdhfkgdhjkgdhf
+    //hgfghjfgkdfhgdhfkgdhjkgdhffghfghfhfshdhgtfdbdghsergrjkhsdrtdrggasrfklrl
 
     private void Start()
     {
@@ -27,7 +27,7 @@ public class SnakeHead : MonoBehaviour
         _tailesLinked = new LinkedList<Transform>();
         _tailesLinked.AddLast(transform);
         Array.ForEach(tails, t => _tailesLinked.AddLast(t));
-        intToSave = PlayerPrefs.GetInt("Saveda", 0);
+        intToSave = PlayerPrefs.GetInt("Saved", 0);
     }
 
     private void OnDestroy()
