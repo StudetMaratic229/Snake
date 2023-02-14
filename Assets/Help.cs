@@ -14,12 +14,14 @@ public class Help : MonoBehaviour
     private bool _isFreeze;
     public static event Action<bool> PauseClicked;
 
+#if UNITY_EDITOR
     [MenuItem("Tools/Clear PlayerPrefs")]
     public static void ResetPrefs()
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
     }
+#endif
     
     private void Start()
     {
