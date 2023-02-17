@@ -17,7 +17,6 @@ public class SnakeHead : MonoBehaviour
     [SerializeField] private int a=0;
     private LinkedList<Transform> _tailesLinked;
     [SerializeField] private int intToSave;
-    //hgfghjfgkdfhgdhfkgdhjkgdhffghfghfhfshdhgtfdbdghsergrjkhsdrtdrggasrfklrlklkmlkm
 
     private void Start()
     {
